@@ -312,7 +312,7 @@ header.on-hero .logo {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: linear-gradient(180deg, rgba(11,57,84,0.35) 0%, rgba(11,57,84,0.65) 100%);
 }
 
 .hero-container {
@@ -412,15 +412,15 @@ header.on-hero .logo {
 }
 
 .cta-button.primary-btn {
-    background-color: var(--white);
-    color: var(--primary-color);
+    background-color: #0B3954;
+    color: #FFFFFF;
     border: none;
 }
 
 .cta-button.secondary-btn {
     background-color: transparent;
-    color: var(--white);
-    border: 1px solid var(--white);
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
 
 .cta-button.primary-btn:hover {
@@ -1498,15 +1498,15 @@ footer {
     }
     
     .hero { padding: calc(var(--header-h) + 20px + env(safe-area-inset-top, 0px)) 0 84px; }
-    .hero h1 { font-size: clamp(1.5rem, 6.2vw, 1.8rem); margin-bottom: 14px; }
+    .hero h1 { font-size: 24px; line-height: 1.2; margin-bottom: 8px; max-width: 280px; margin-left: auto; margin-right: auto; text-align: center; font-weight: 300; }
     
-    .hero p { font-size: clamp(0.9rem, 3.4vw, 1rem); margin-bottom: 24px; }
+    .hero p { font-size: 14px; line-height: 1.4; color: rgba(255,255,255,0.9); margin-bottom: 8px; max-width: 280px; margin-left: auto; margin-right: auto; text-align: center; font-weight: 400; }
     
-    .hero-buttons { flex-direction: column; width: 100%; gap: 20px; }
+    .hero-buttons { flex-direction: column; width: 100%; gap: 8px; align-items: center; }
     
     .hero-buttons .cta-button { width: 100%; margin-bottom: 0; text-align: center; }
 
-    .cta-button { padding: 10px 16px; font-size: inherit; }
+    .cta-button { padding: 0 20px; height: 40px; line-height: 40px; font-size: 12px; border-radius: 8px; }
     .big-house-logo { max-height: clamp(130px, 20vh, 170px); }
     
     .service-card {
