@@ -189,6 +189,18 @@ export function ClientBehavior() {
     };
     header?.addEventListener('click', headerClick);
 
+    // Visual viewport height and header height → CSS vars for consistent hero sizing
+    const setViewportVars = () => {
+      const vh = (window as any).visualViewport?.height || window.innerHeight;
+      document.documentElement.style.setProperty('--vh', `${vh * 0.01}px`);
+      const headerEl = document.querySelector('header') as HTMLElement | null;
+      const headerH = headerEl?.offsetHeight || 0;
+      document.documentElement.style.setProperty('--header-h', `${headerH}px`);
+    };
+    setViewportVars();
+    window.addEventListener('resize', setViewportVars);
+    (window as any).visualViewport?.addEventListener('resize', setViewportVars);
+
     // Toggle high-contrast header on top of hero for readability
     const hero = document.getElementById('home');
     const updateHeaderContrast = () => {
@@ -211,6 +223,8 @@ export function ClientBehavior() {
       anchors.forEach(a => a.removeEventListener('click', anchorHandler as any));
       clearInterval(interval);
       header?.removeEventListener('click', headerClick);
+      window.removeEventListener('resize', setViewportVars);
+      (window as any).visualViewport?.removeEventListener('resize', setViewportVars);
       window.removeEventListener('scroll', updateHeaderContrast as any);
       window.removeEventListener('resize', updateHeaderContrast as any);
       window.removeEventListener('resize', adjustTestimonialsHeight as any);
