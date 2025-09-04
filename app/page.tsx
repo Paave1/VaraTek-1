@@ -297,7 +297,7 @@ export default function Page() {
                   <p><a href="tel:+358458060881" className="contact-link phone"><i className="fas fa-phone" /> +358 45 8060881</a></p>
                   <p>Pavel Karasev — IT-osasto ja sähkötyön päälikkö</p>
                   <p><a href="tel:+358465740203" className="contact-link phone"><i className="fas fa-phone" /> +358 46 5740203</a></p>
-                  <p>Timo Aho — Vinyylilattiat myynti ja korjaustöiden vastaava johtaja</p>
+                  <p>Timo Aho — Vinyylilattian myynti ja korjaustöiden vastaava johtaja</p>
                   <p><a href="tel:+358456123014" className="contact-link phone"><i className="fas fa-phone" /> +358 45 6123014</a></p>
                 </div>
                 <div className="info-item">
