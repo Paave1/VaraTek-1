@@ -291,13 +291,13 @@ export default function Page() {
                   <h4 className="fi hidden">Puhelin</h4>
                   <p>Igor Aksenov — Toimitusjohtaja</p>
                   <p><a href="tel:+358451964604" className="contact-link phone"><i className="fas fa-phone" /> +358 45 1964604</a></p>
-                  <p>Innokenti Tretjakov — Myynti- ja rakennuspäällikkö</p>
+                  <p>Innokenti Grant — Myynti- ja rakennuspäällikkö</p>
                   <p><a href="tel:+358413280983" className="contact-link phone"><i className="fas fa-phone" /> +358 41 3280983</a></p>
                   <p>Alexand Itsjov — Hitsaustyö tilaukset ja myynti</p>
                   <p><a href="tel:+358458060881" className="contact-link phone"><i className="fas fa-phone" /> +358 45 8060881</a></p>
                   <p>Pavel Karasev — IT-osasto ja sähkötyön päälikkö</p>
                   <p><a href="tel:+358465740203" className="contact-link phone"><i className="fas fa-phone" /> +358 46 5740203</a></p>
-                  <p>Timo Aho — Vinyylilattiat myynti ja korjaustöiden vastsva johtaja</p>
+                  <p>Timo Aho — Vinyylilattiat myynti ja korjaustöiden vastaava johtaja</p>
                   <p><a href="tel:+358456123014" className="contact-link phone"><i className="fas fa-phone" /> +358 45 6123014</a></p>
                 </div>
                 <div className="info-item">
