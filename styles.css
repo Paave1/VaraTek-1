@@ -140,6 +140,18 @@ header {
     gap: 15px;
 }
 
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.logo-link:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
+}
+
 .logo-text {
     display: flex;
     flex-direction: column;
@@ -1207,6 +1219,15 @@ footer {
     align-items: center;
     gap: 15px;
     margin-bottom: 25px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.footer-logo-container:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
 }
 
 .footer-logo-img {
